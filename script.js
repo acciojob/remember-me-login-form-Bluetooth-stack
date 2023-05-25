@@ -6,7 +6,7 @@ const submit = document.getElementById('submit');
 const log = document.getElementById('existing');
 
 submit.addEventListener('click', (e)=>{
-    e.preventDefault()
+    // e.preventDefault()
     if(check.checked){
         localStorage.setItem('username', user.value)
         localStorage.setItem('password', pass.value)
