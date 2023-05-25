@@ -9,7 +9,12 @@ submit.addEventListener('click', (e)=>{
     e.preventDefault()
     if(check.checked){
         localStorage.setItem('username', user.value)
+        localStorage.setItem('password', pass.value)
     }
+	if(!check.checked){
+		localStorage.removeItem('username');
+		localStorage.removeItem('password');
+	}
     alert(`Logged in as ${user.value}`)
 })
 
